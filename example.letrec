@@ -1,0 +1,6 @@
+(letrec double x
+  (if (zero? x)
+      0
+      (- (double (- x 1)) -2)) 
+  (double 10))
+;; expected to give 20
